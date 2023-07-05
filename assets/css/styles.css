@@ -65,7 +65,7 @@ h1 {
 }
 
 body {
-  background-image: url('assets/ooorganize.svg');
+  background-image: url('../ooorganize.svg');
   background-position: center;
   font-family: 'Open Sans', sans-serif;
 }
