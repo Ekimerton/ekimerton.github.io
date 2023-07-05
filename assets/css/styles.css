@@ -65,7 +65,7 @@ h1 {
 }
 
 body {
-  background-image: url('/Users/ekimerton/Documents/GitHub/portfolio/ooorganize.svg');
+  background-image: url('assets/ooorganize.svg');
   background-position: center;
   font-family: 'Open Sans', sans-serif;
 }
