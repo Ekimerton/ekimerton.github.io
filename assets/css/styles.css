@@ -58,10 +58,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-h1 {
-  text-align: center;
-}
-
 body {
   background-image: url('../ooorganize.svg');
   background-position: center;
@@ -75,6 +71,7 @@ div {
 
 h1 {
   font-size: 2rem;
+  text-align: center;
 }
 
 h2 {
@@ -101,6 +98,8 @@ a:active  {
 
 .column-view {
   align-items: center;
+  justify-content: center;
+  min-height: 100%;
 }
 
 .container {
@@ -148,6 +147,6 @@ a:active  {
   text-align: center;
 }
 
-.footer p{
+.footer p {
   font-size: 0.9rem;
 }
