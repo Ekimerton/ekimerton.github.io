@@ -49,8 +49,6 @@ input, button, textarea, select {
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 /*
@@ -108,9 +106,15 @@ a:active  {
 .container {
   width: 100%;
   max-width: 800px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px;
   justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .section {
