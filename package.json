@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "generate": "node generate.js",
+    "add-recipe": "node createRecipe.js"
+  },
+  "dependencies": {
+    "swig": "^1.4.2"
+  }
+}

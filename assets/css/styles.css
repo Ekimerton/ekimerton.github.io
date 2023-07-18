@@ -88,6 +88,12 @@ p {
   padding-top: 8px;
 }
 
+
+img {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 a{
   color: #2630ff;
 }
@@ -130,7 +136,13 @@ a:active  {
 .propic {
   width: 200px;
   border-radius: 100%;
-  margin-bottom: 10px;
+}
+
+.header-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+  border-radius: 10%;
 }
 
 .frosted-glass {
@@ -149,4 +161,9 @@ a:active  {
 
 .footer p {
   font-size: 0.9rem;
+}
+
+
+.numbered-list li::marker {
+  font-weight: bold;
 }

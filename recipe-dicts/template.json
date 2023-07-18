@@ -1,0 +1,22 @@
+{
+  "name": "Recipe",
+  "description": "Demo recipe",
+  "intro": ["Paragraph1", "Paragraph2"],
+  "inspiration": ["website1", "website2"],
+  "ingredients": [
+    {
+      "name": "Ingredient1",
+      "quantity": "1",
+      "unit": "cup"
+    },
+    {
+      "name": "Ingredient2",
+      "quantity": "2",
+      "unit": "cup"
+    }
+  ],
+  "directions": [
+    {"text": "Step1", "image": null},
+    {"text": "Step2", "image": null}
+  ]
+}

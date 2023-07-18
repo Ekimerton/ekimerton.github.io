@@ -76,11 +76,11 @@
         </div>
         <div class="section">
           <h3>Recipes</h3>
-          
+          {% for recipeLink in recipeLinks %}
           <p>
-            <a href="recipes/chinese-american-stir-fry.html">Chinese-American Pork Stir-fry</a>
+            <a href="{{ recipeLink.url }}">{{ recipeLink.name }}</a>
           </p>
-          
+          {% endfor %}
         </div>
         <div class="section">
           <h3>Diving Footage</h3>
