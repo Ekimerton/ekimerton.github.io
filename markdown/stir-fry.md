@@ -19,6 +19,8 @@ This recipe uses insights from: [Serious Eats Pork Lo Mein](https://www.seriouse
 - 2 cloves garlic
 - 2 teaspoons ginger (same amount as the garlic)
 - 1 thai chili pepper (or as much as you'd like)
+#### Sauce
+
 - 2 tablespoons chicken stock
 - 1 tablespoon rice wine vinegar
 - 1 tablespoon soy sauce
