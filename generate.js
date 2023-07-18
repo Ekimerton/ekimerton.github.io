@@ -125,6 +125,5 @@ markdownFiles.forEach((markdownFile) => {
 });
 
 // Generate index.html
-console.log(recipeLinks);
 const indexOutput = swig.renderFile("index.html.swig", { recipeLinks });
 fs.writeFileSync("index.html", indexOutput);

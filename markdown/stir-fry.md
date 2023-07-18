@@ -13,11 +13,11 @@ This recipe uses insights from: [Serious Eats Pork Lo Mein](https://www.seriouse
 ## Ingredients
 
 - 450 grams pork (loin or tenderloin)
-- 1/2 nappa cabbage (150 grams)
+- 1/2 nappa cabbage 
 - 1/2 carrot
 - 3 green onions
-- 2 cloves garlic (5 grams)
-- 2 teaspoons ginger (5 grams)
+- 2 cloves garlic
+- 2 teaspoons ginger (same amount as the garlic)
 - 1 thai chili pepper (or as much as you'd like)
 - 2 tablespoons chicken stock
 - 1 tablespoon rice wine vinegar
