@@ -119,7 +119,7 @@ markdownFiles.forEach((markdownFile) => {
   if (!recipeLinks.some((link) => link.url === outputFileName)) {
     recipeLinks.push({
       name: firstTitle,
-      url: outputFileName,
+      url: outputFileName.replace(".html", ""),
     });
   }
 });
