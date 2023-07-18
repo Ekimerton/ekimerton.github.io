@@ -7,13 +7,9 @@ if (!recipeName) {
   process.exit(1);
 }
 
-const sourcePath = path.join(__dirname, "recipe-dicts", "template.json");
-const destinationPath = path.join(
-  __dirname,
-  "recipe-dicts",
-  `${recipeName}.json`
-);
+const sourcePath = path.join(__dirname, "markdown", "template.md");
+const destinationPath = path.join(__dirname, "markdown", `${recipeName}.md`);
 
 fs.copyFileSync(sourcePath, destinationPath);
 
-console.log(`Recipe ${recipeName}.json has been created.`);
+console.log(`Recipe ${recipeName}.md has been created.`);

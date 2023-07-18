@@ -4,6 +4,8 @@
     "add-recipe": "node createRecipe.js"
   },
   "dependencies": {
+    "jsdom": "^22.1.0",
+    "marked": "^5.1.1",
     "swig": "^1.4.2"
   }
 }

@@ -1,32 +1,130 @@
-const swig = require("swig");
 const fs = require("fs");
-const path = require("path");
+const marked = require("marked");
+const { JSDOM } = require("jsdom");
+const swig = require("swig");
 
-// Find all JSON files in the recipe-dicts directory
-let jsonFiles = fs
-  .readdirSync("./recipe-dicts")
-  .filter((file) => file.endsWith(".json"));
+// Define your template
+const template = fs.readFileSync("./recipes/template.html", "utf8");
 
-// Filter out the template file
-jsonFiles = jsonFiles.filter((file) => file !== "template.json");
+// Read the markdown files in the directory
+const markdownFiles = fs.readdirSync("./markdown");
 
-const recipeLinks = jsonFiles.map((jsonFile) => {
-  const recipe = require(path.join(__dirname, "recipe-dicts", jsonFile));
-  return {
-    name: recipe.name,
-    url: `recipes/${jsonFile.replace(".json", ".html")}`,
+// Store the recipe links
+const recipeLinks = [];
+
+// Process each markdown file
+markdownFiles.forEach((markdownFile) => {
+  // Skip the template.md file
+  if (markdownFile === "template.md") {
+    return;
+  }
+
+  // Define your markdown
+  const markdowntring = fs.readFileSync(`./markdown/${markdownFile}`, "utf8");
+
+  // Create a custom renderer
+  let renderer = new marked.Renderer();
+  let inSection = false;
+  let firstTitle = "";
+  let subtitle = "";
+
+  renderer.heading = function (text, level) {
+    if (level === 1 && firstTitle === "") {
+      firstTitle = text;
+      return "";
+    } else if (level === 2) {
+      let res = inSection
+        ? `</div><div class="section"><h${level}>${text}</h${level}>`
+        : `<div class="section"><h${level}>${text}</h${level}>`;
+      inSection = true;
+      return res;
+    } else {
+      return `<h${level}>${text}</h${level}>`;
+    }
   };
-});
 
-// Generate an HTML file for each recipe
-jsonFiles.forEach((jsonFile) => {
-  const recipe = require(path.join(__dirname, "recipe-dicts", jsonFile));
-  const output = swig.renderFile("./recipes/template.html.swig", {
-    recipe: recipe,
-  });
-  fs.writeFileSync(`./recipes/${jsonFile.replace(".json", ".html")}`, output);
+  renderer.paragraph = function (text) {
+    if (firstTitle && !subtitle) {
+      subtitle = text;
+      return ""; // skip this paragraph from rendering normally
+    } else if (inSection && text.trim() !== "") {
+      return `<p>${text}</p>`;
+    } else {
+      return text;
+    }
+  };
+
+  renderer.listitem = function (text) {
+    if (inSection) {
+      return `<li><p>${text}</p></li>`;
+    } else {
+      return `<li>${text}</li>`;
+    }
+  };
+
+  renderer.list = function (body, ordered) {
+    if (inSection) {
+      return ordered
+        ? `<ol class="numbered-list">${body}</ol>`
+        : `<ul class="ingredients">${body}</ul>`;
+    } else {
+      return ordered ? `<ol>${body}</ol>` : `<ul>${body}</ul>`;
+    }
+  };
+
+  // Close the section when finished
+  renderer.endSection = function () {
+    if (inSection) {
+      inSection = false;
+      return "</div>";
+    }
+  };
+
+  // Apply the custom renderer
+  marked.setOptions({ renderer });
+
+  // Convert markdown string to HTML
+  let htmlString = marked.parse(markdowntring);
+
+  // Append ending section if necessary
+  if (inSection) {
+    htmlString += renderer.endSection();
+  }
+
+  // Create a DOM from the template
+  const dom = new JSDOM(template);
+
+  // Set the title
+  dom.window.document.querySelector("title").textContent = firstTitle;
+
+  if (subtitle) {
+    dom.window.document.querySelector(".section-centered h4").textContent =
+      subtitle;
+  }
+
+  // Replace the h1 in the section-centered section
+  dom.window.document.querySelector(".section-centered h1").textContent =
+    firstTitle;
+
+  // Set the HTML content
+  dom.window.document
+    .querySelector(".links")
+    .insertAdjacentHTML("beforebegin", htmlString);
+
+  // Write HTML to a new file
+  const outputFileName = `recipes/${markdownFile.replace(".md", ".html")}`;
+  fs.writeFileSync(outputFileName, dom.serialize());
+
+  // Update the recipe links array if it's not already added
+  if (!recipeLinks.some((link) => link.url === outputFileName)) {
+    recipeLinks.push({
+      name: firstTitle,
+      url: outputFileName,
+    });
+  }
 });
 
 // Generate index.html
+console.log(recipeLinks);
 const indexOutput = swig.renderFile("index.html.swig", { recipeLinks });
 fs.writeFileSync("index.html", indexOutput);
