@@ -74,6 +74,9 @@
             {% endfor %}
           </ol>
         </div>
+        <div class="section links">
+        <a href="/"><p>Back Home<p></a>
+        </div>
         <div class="footer">
           <p>All projects made by Ekimerton with 💛</p>
         </div>
