@@ -1,4 +1,4 @@
-# Recipe
+# Bolognese Sauce
 
 Demo recipe
 
