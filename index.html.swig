@@ -71,6 +71,8 @@
         </div>
         <div class="section">
           <h3>Projects Links</h3>
+          <p><a href="https://ekimbox.vercel.app/">Ekimbox</a></p>
+          <p><a href="https://hexcodle.com/">Hexcodle</a></p>
           <p><a href="https://reciple-game.vercel.app/">Reciple</a></p>
           <p><a href="/classio">Classio (sunset)</a></p>
         </div>
