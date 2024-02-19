@@ -59,6 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  background-color: #fffff4;
   background-image: url('../img/ooorganize.svg');
   background-position: center;
   font-family: 'Open Sans', sans-serif;
