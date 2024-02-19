@@ -83,12 +83,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 8px;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-bottom: 8px;
   padding-top: 8px;
 }
@@ -115,8 +115,8 @@ a:active  {
 
 .container {
   width: 100%;
-  max-width: 800px;
-  padding: 48px;
+  max-width: 700px;
+  padding: 48px 4px;
   justify-content: center;
 }
 
@@ -148,12 +148,6 @@ a:active  {
   object-fit: cover;
   aspect-ratio: 3/2;
   border-radius: 10%;
-}
-
-.frosted-glass {
-  background: rgba(255, 255, 255, 0.6);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
 }
 
 .links {
