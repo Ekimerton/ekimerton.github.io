@@ -14,7 +14,7 @@ export default function ProjectEntry({
       <div className="row-span-2 col-span-2 rounded-xl border-2 border-stone-700/10 bg-stone-100 dark:bg-stone-900 bg-cover bg-black/30 p-4 pb-0">
         <div className="relative w-full h-full flex flex-col justify-start items-center m-0 overflow-hidden text-center">
           <h3 className="text-3xl mt-4 mb-2">{title}</h3>
-          <p className="w-11/12">{content}</p>
+          <p className="w-11/12 text-balance">{content}</p>
           <Image
             alt="project-1"
             src={imageSrc}

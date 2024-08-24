@@ -14,7 +14,7 @@ export default function Hero({}) {
           <div className="flex flex-col justify-between">
             <div className="-mt-1 flex flex-col gap-2">
               <p className="dark:text-stone-50 text-stone-950 text-3xl">
-                Chad Coderman
+                Ekim Karabey
               </p>
               <p className="text-stone-600 dark:text-stone-400">
                 Software Engineer and Indie Hacker 🇨🇦
@@ -38,7 +38,7 @@ export default function Hero({}) {
           <Image
             id="headshot"
             className="w-36 h-36 max-sm:h-28 max-sm:w-28 rounded-md border-stone-700/10 border-2"
-            src={"/images/headshot.jpg"}
+            src={"/images/pfp.png"}
             width={150}
             height={150}
             alt="Headshot"
@@ -63,7 +63,7 @@ export default function Hero({}) {
         <Image
           id="headshot"
           className="w-36 h-36 max-sm:h-28 max-sm:w-28 rounded-md border-stone-700/10 border-2"
-          src={"/images/headshot.jpg"}
+          src={"/images/pfp.png"}
           width={150}
           height={150}
           alt="Headshot"
@@ -72,7 +72,7 @@ export default function Hero({}) {
           <div className="flex flex-col justify-between">
             <div className="-mt-1 flex flex-col gap-2">
               <p className="dark:text-stone-50 text-stone-950 text-3xl">
-                Chad Coderman
+                Ekim Karabey
               </p>
               <p className="text-stone-600 dark:text-stone-400">
                 Software Engineer and Indie Hacker 🇨🇦

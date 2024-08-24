@@ -8,24 +8,29 @@ export default function ProjectsSection({}) {
       <div className="grid auto-rows-[160px] grid-cols-2 md:grid-cols-3 gap-4">
         <ProjectEntry
           size="large"
-          title="Github for Lesbians"
-          content="Github for lesbians, generating 10k MRR. It shone, pale as bone, as I stood there alone."
-          imageSrc="/images/project.png"
-          url="https://xkcd.com/624/"
+          title="Hexcodle"
+          content="Wordle for color nerds. Featured on Reddit, Hacker News and Yahoo News."
+          imageSrc="/images/hexcodle.jpeg"
+          url="https://hexcodle.com/mini/"
         />
         <StatBox number="5000+" bottomCaption="Users Served Daily" />
-        <StatBox topCaption={"Over"} number="$1000" bottomCaption="MRR" />
         <StatBox
-          number="7"
-          bottomCaption="Open Source Repositories"
+          topCaption={"Over"}
+          number="3"
+          bottomCaption="Years Of Experience"
+        />
+        <StatBox
+          topCaption="Broke Prod"
+          number="4"
+          bottomCaption="Times ...And Counting!"
           className="max-md:hidden"
         />
         <ProjectEntry
           size="medium"
-          title="Github for Lesbians"
-          content="Github for lesbians, generating 10k MRR."
-          imageSrc="/images/project.png"
-          url="https://xkcd.com/624/"
+          title="10X Portfolio"
+          content="A modern Next.js template for launching a personal portfolio."
+          imageSrc="/images/10xportfolio.png"
+          url="https://10xportfolio.com/"
         />
       </div>
     </>
