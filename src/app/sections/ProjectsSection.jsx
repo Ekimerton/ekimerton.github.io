@@ -10,7 +10,7 @@ export default function ProjectsSection({}) {
           size="large"
           title="Hexcodle"
           content="Wordle for color nerds. Featured on Reddit, Hacker News and Yahoo News."
-          imageSrc="/images/hexcodle.jpeg"
+          imageSrc="/images/Hexcodle.jpeg"
           url="https://hexcodle.com/mini/"
         />
         <StatBox number="5000+" bottomCaption="Users Served Daily" />
