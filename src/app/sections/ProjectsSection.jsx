@@ -28,7 +28,7 @@ export default function ProjectsSection({}) {
         <ProjectEntry
           size="medium"
           title="10X Portfolio"
-          content="A modern Next.js template for launching a personal portfolio."
+          content="A modern Next.js portfolio template."
           imageSrc="/images/10xportfolio.png"
           url="https://10xportfolio.com/"
         />
