@@ -6,15 +6,15 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Chad Coderman",
-  description: "Software Engineer - Over 15 years of industry experience.",
+  title: "Ekim's Portfolio",
+  description: "Software Engineer - Come check my stuff out :)",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        {/*<Navbar />*/}
         {children}
         <Footer />
       </body>

@@ -14,13 +14,13 @@ export default function Navbar({}) {
           id="navbar-left"
           className="flex items-center justify-center gap-2"
         >
-          <Link href={"/"}>
+          {/*<Link href={"/"}>
             <p
               className={`text-3xl text-stone-700 dark:text-stone-300 py-2 leading-none ${quantico.className}`}
             >
               /ekimerton/home/
             </p>
-          </Link>
+          </Link>*/}
           {/*
           <Button variant="ghost">Home</Button>
           <Button variant="ghost">Blog</Button>

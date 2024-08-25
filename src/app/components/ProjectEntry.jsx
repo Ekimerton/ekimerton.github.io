@@ -50,7 +50,7 @@ export default function ProjectEntry({
         />
         <div>
           <h3 className="m-0">{title}</h3>
-          <p className="hidden sm:block">{content}</p>
+          <p className="">{content}</p>
         </div>
 
         {url && (
