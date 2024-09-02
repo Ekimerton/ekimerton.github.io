@@ -44,16 +44,6 @@ export default function Hero({}) {
             alt="Headshot"
           />
         </div>
-        <div className="sm:hidden w-full mt-6 flex gap-2">
-          <Button size="lg" variant="secondary" className="flex-1">
-            <Mail className="w-4 h-4 mr-2" />
-            Get in touch
-          </Button>
-          <Button className="flex-1" size="lg" variant="secondary">
-            <DownloadCloud className="h-4 w-4 mr-2" />
-            Resume
-          </Button>
-        </div>
       </div>
       {/* Mobile Version */}
       <div
@@ -78,30 +68,20 @@ export default function Hero({}) {
                 Software Engineer and Indie Hacker 🇨🇦
               </p>
             </div>
-            <div className="max-sm:hidden">
-              <Button asChild variant="secondary" size="lg">
-                <Link href="mailto:ekim0252@gmail.com">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Get in touch
-                </Link>
-              </Button>
-              <Button asChild size="lg" className="ml-2" variant="secondary">
-                <Link href="/resume.pdf">
-                  <DownloadCloud className="h-4 w-4 mr-2" />
-                  Resume
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
         <div className="sm:hidden w-full flex gap-2">
-          <Button size="lg" variant="secondary" className="flex-1">
-            <Mail className="w-4 h-4 mr-2" />
-            Get in touch
+          <Button size="lg" variant="secondary" className="flex-1" asChild>
+            <Link href="mailto:ekim0252@gmail.com">
+              <Mail className="w-4 h-4 mr-2" />
+              Get in touch
+            </Link>
           </Button>
-          <Button className="flex-1" size="lg" variant="secondary">
-            <DownloadCloud className="h-4 w-4 mr-2" />
-            Resume
+          <Button className="flex-1" size="lg" variant="secondary" asChild>
+            <Link href="/resume.pdf">
+              <DownloadCloud className="h-4 w-4 mr-2" />
+              Resume
+            </Link>
           </Button>
         </div>
         <ChevronsDown className="h-4 w-4 mr-2 text-stone-400" />

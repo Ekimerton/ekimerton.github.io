@@ -48,19 +48,18 @@ export default function ProjectEntry({
           className="h-full w-min m-0 object-scale-down rounded-md"
           height={100}
         />
-        <div>
+        <div class="flex flex-col">
           <h3 className="m-0">{title}</h3>
-          <p className="">{content}</p>
+          <p className="m-0 mb-auto">{content}</p>
+          {url && (
+            <Button asChild className="no-underline w-32" size="sm">
+              <a href={url}>
+                See Project
+                <ExternalLink className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          )}
         </div>
-
-        {url && (
-          <Button asChild className="bottom-0 right-0 absolute no-underline">
-            <a href={url}>
-              See Project
-              <ExternalLink className="ml-2 w-5 h-5" />
-            </a>
-          </Button>
-        )}
       </div>
     </div>
   );
