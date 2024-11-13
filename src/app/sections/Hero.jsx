@@ -1,10 +1,10 @@
-import { Button } from "@/app/components/ui/button";
-import { Mail, DownloadCloud, ChevronsDown } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import Spline from "@splinetool/react-spline/next";
+import dynamic from "next/dynamic";
 
-export default function Hero({}) {
+const Spline = dynamic(() => import("@splinetool/react-spline"), {
+  ssr: false,
+});
+
+export default function Hero() {
   return (
     <div className="bg-stone-200 dark:bg-stone-900 w-full">
       <div
