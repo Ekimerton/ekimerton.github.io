@@ -7,7 +7,7 @@ export default async function BlogHome() {
 
   return (
     <main className="min-h-screen w-full dark:bg-stone-950 bg-stone-50 flex justify-center">
-      <div className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-600 max-w-4xl w-full px-6 py-12">
+      <div className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-600 max-w-4xl w-full px-4 py-12">
         <Link
           href="/"
           className="text-sm no-underline text-stone-600 dark:text-prose-400 flex items-center mb-10 font-semibold"
