@@ -1,7 +1,6 @@
 export default function AboutSection({}) {
   return (
     <>
-      <h2>About Me</h2>
       <p>
         Hey there! 👋 I&apos;m a software engineer who loves to solve puzzles
         and build cool stuff. This website is a little look into my world - my

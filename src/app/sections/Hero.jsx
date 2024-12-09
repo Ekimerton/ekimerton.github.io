@@ -7,10 +7,10 @@ export default function Hero() {
       <Script
         type="module"
         src="https://unpkg.com/@splinetool/viewer@1.9.38/build/spline-viewer.js"
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
       />
 
-      <div className="bg-[#fff] dark:bg-stone-900 w-full max-w-6xl rounded-md">
+      <div className="bg-[#fff] dark:bg-stone-900 w-full max-w-6xl rounded-lg">
         <div
           className="max-w-4xl mx-auto h-[70vh] max-sm:h-[440px]"
           id="profile-section"
