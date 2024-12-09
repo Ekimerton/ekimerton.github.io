@@ -8,10 +8,14 @@ export default function Navbar({}) {
         <div className="flex-1"></div>
         <div className="flex items-center justify-center gap-2">
           <Button variant="link" asChild>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"} className="font-semibold">
+              Home
+            </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href={"/blog"}>Blog</Link>
+            <Link href={"/blog"} className="font-semibold">
+              Blog
+            </Link>
           </Button>
         </div>
         <div className="flex-1 flex justify-end items-end">
