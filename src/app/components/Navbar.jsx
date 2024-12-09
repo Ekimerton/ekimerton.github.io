@@ -5,16 +5,16 @@ import { Github, Twitter } from "lucide-react";
 export default function Navbar({}) {
   return (
     <nav className="bg-stone-100 dark:bg-stone-950 top-0 w-full z-10">
-      <div className="max-w-4xl mx-auto pt-4 px-5 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
-        <div className="flex-1">
-          <Button variant="link" asChild size="icon">
-            <Link href={"https://github.com/Ekimerton/"} target="_blank">
-              <Github className="w-6 h-6 fill-stone-950 dark:fill-stone-50" />
-            </Link>
-          </Button>
-          <Button variant="link" asChild size="icon">
-            <Link href={"https://x.com/Ekimerton"} target="_blank">
-              <Twitter className="w-6 h-6 fill-stone-950 dark:fill-stone-50" />
+      <div className="max-w-4xl mx-auto pt-3 px-5 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
+        {/* Adjust the margins for visual centering */}
+        <div className="flex-1 -ml-4">
+          <Button variant="link" asChild>
+            <Link
+              href={"https://www.10xportfolio.com/"}
+              target="_blank"
+              className="font-semibold text-yellow-500 dark:text-yellow-400"
+            >
+              Buy this <span className="max-sm:hidden"> &nbsp;portfolio</span>
             </Link>
           </Button>
         </div>
@@ -30,16 +30,20 @@ export default function Navbar({}) {
             </Link>
           </Button>
         </div>
-        <div className="flex-1 flex justify-end items-end">
-          <Button variant="link" asChild>
-            <Link
-              href={"https://www.10xportfolio.com/"}
-              target="_blank"
-              className="font-semibold text-yellow-500 dark:text-yellow-400"
-            >
-              Buy this <span className="max-sm:hidden"> &nbsp;portfolio</span>
+        {/* Adjust the margins for visual centering */}
+        <div className="flex-1 flex justify-end items-end -mr-1">
+          <Button variant="link" asChild size="icon">
+            <Link href={"https://github.com/Ekimerton/"} target="_blank">
+              <Github className="w-6 h-6 fill-stone-950 dark:fill-stone-50" />
             </Link>
           </Button>
+          {/*
+            <Button variant="link" asChild size="icon">
+            <Link href={"https://x.com/Ekimerton"} target="_blank">
+              <Twitter className="w-6 h-6 fill-stone-950 dark:fill-stone-50" />
+            </Link>
+          </Button>
+          */}
         </div>
       </div>
     </nav>
