@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
 
 body {
-  background-color: #e7e5e4;
+  background-color: #f5f5f4;
 }
 
 @media (prefers-color-scheme: dark) {

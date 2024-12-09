@@ -11,7 +11,7 @@ export default function ProjectEntry({
 }) {
   if (size === "large") {
     return (
-      <div className="row-span-2 col-span-2 rounded-xl border-2 border-stone-700/10 bg-stone-100 dark:bg-stone-900 bg-cover bg-black/30 p-4 pb-0">
+      <div className="row-span-2 col-span-2 rounded-xl border-2 border-stone-700/10 bg-stone-50 dark:bg-stone-900 bg-cover bg-black/30 p-4 pb-0">
         <div className="relative w-full h-full flex flex-col justify-start items-center m-0 overflow-hidden text-center">
           <h3 className="text-3xl mt-4 mb-2">{title}</h3>
           <p className="w-11/12 text-balance">{content}</p>
@@ -38,7 +38,7 @@ export default function ProjectEntry({
 
   return (
     <div
-      className={`row-span-1 col-span-2 rounded-xl border-2 border-stone-700/10 bg-stone-100 dark:bg-stone-900 bg-cover bg-black/30 p-4`}
+      className={`row-span-1 col-span-2 rounded-xl border-2 border-stone-700/10 bg-stone-50 dark:bg-stone-900 bg-cover bg-black/30 p-4`}
     >
       <div className="relative w-full h-full flex m-0 overflow-hidden gap-4">
         <Image
@@ -48,7 +48,7 @@ export default function ProjectEntry({
           className="h-full w-min m-0 object-scale-down rounded-md"
           height={100}
         />
-        <div class="flex flex-col">
+        <div className="flex flex-col">
           <h3 className="m-0">{title}</h3>
           <p className="m-0 mb-auto">{content}</p>
           {url && (

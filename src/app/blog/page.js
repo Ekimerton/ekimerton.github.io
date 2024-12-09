@@ -6,16 +6,16 @@ export default async function BlogHome() {
   const posts = await loadAllPosts();
 
   return (
-    <main className="min-h-screen w-full dark:bg-stone-950 bg-stone-50 flex justify-center">
-      <div className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-600 max-w-4xl w-full px-4 py-12">
+    <main className="min-h-screen w-full dark:bg-stone-950 bg-stone-100 flex justify-center">
+      <div className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-700 max-w-4xl w-full px-4 py-4 prose-h2:font-medium prose-h1:font-medium">
         <Link
           href="/"
-          className="text-sm no-underline text-stone-600 dark:text-prose-400 flex items-center mb-10 font-semibold"
+          className="text-sm no-underline text-stone-700 dark:text-stone-400 flex items-center mb-10 font-semibold"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />
           Back home
         </Link>
-        <h1>Blog Posts</h1>
+        <h1 class="text-center">Blog Posts</h1>
         {posts.map(({ slug, frontMatter, preview }) => (
           <div key={slug}>
             <Link href={`/blog/${slug}`}>

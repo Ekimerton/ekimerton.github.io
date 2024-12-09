@@ -15,8 +15,8 @@ export default function Home() {
       <main className="min-h-screen w-full">
         {/*<Navbar />*/}
         <Hero />
-        <div className="flex items-center justify-center dark:bg-stone-950 bg-stone-50">
-          <article className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-600 dark:prose-blockquote:text-stone-400 prose-blockquote:text-stone-600 max-w-4xl w-full px-6 py-12">
+        <div className="flex items-center justify-center dark:bg-stone-950 bg-stone-100">
+          <article className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-800 dark:prose-blockquote:text-stone-300 prose-blockquote:text-stone-800 max-w-4xl w-full px-4 py-4 prose-h2:font-medium prose-h1:font-medium">
             <AboutSection />
             {/*<ExperienceSection />*/}
             <ProjectsSection />

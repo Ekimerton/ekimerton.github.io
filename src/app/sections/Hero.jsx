@@ -2,7 +2,7 @@ import Script from "next/script";
 
 export default function Hero() {
   return (
-    <>
+    <div className="flex justify-center items-center bg-stone-100 dark:bg-stone-950 p-4">
       {/* Include the Spline Viewer script using next/script */}
       <Script
         type="module"
@@ -10,7 +10,7 @@ export default function Hero() {
         strategy="beforeInteractive"
       />
 
-      <div className="bg-stone-200 dark:bg-stone-900 w-full">
+      <div className="bg-[#fff] dark:bg-stone-900 w-full max-w-6xl rounded-md">
         <div
           className="max-w-4xl mx-auto h-[70vh] max-sm:h-[500px]"
           id="profile-section"
@@ -23,6 +23,6 @@ export default function Hero() {
           ></spline-viewer>
         </div>
       </div>
-    </>
+    </div>
   );
 }

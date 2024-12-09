@@ -34,11 +34,11 @@ export default async function Post({ params }) {
   return (
     <div className="">
       {/*<Hero />*/}
-      <div className="flex justify-center dark:bg-stone-950 bg-stone-50">
-        <article className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-600 dark:prose-blockquote:text-stone-400 prose-blockquote:text-stone-600 max-w-4xl w-full px-6 py-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-code:bg-stone-800 dark:prose-code:bg-stone-600 prose-code:text-stone-200 dark:prose-code:text-stone-300 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none prose-code:mx-0.5 prose-pre:bg-stone-800 dark:prose-pre:bg-stone-600 prose-code:break-words">
+      <div className="flex justify-center dark:bg-stone-950 bg-stone-100">
+        <article className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-700 dark:prose-blockquote:text-stone-300 prose-blockquote:text-stone-700 max-w-4xl w-full px-4 py-4 min-h-screen prose-code:py-1 prose-code:px-2 prose-code:bg-stone-800 dark:prose-code:bg-stone-600 prose-code:text-stone-200 dark:prose-code:text-stone-300 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none prose-code:mx-0.5 prose-pre:bg-stone-800 dark:prose-pre:bg-stone-600 prose-code:break-words prose-h2:font-medium prose-h1:font-medium">
           <Link
             href="/blog"
-            className="text-sm no-underline text-stone-600 dark:text-prose-400 flex items-center mb-10 font-semibold"
+            className="text-sm no-underline text-stone-700 dark:text-stone-400 flex items-center mb-10 font-semibold"
           >
             <ArrowLeft className="w-4 h-4 mr-1" />
             Back to posts
