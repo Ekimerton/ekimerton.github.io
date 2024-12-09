@@ -12,7 +12,7 @@ export default function Hero() {
 
       <div className="bg-[#fff] dark:bg-stone-900 w-full max-w-6xl rounded-md">
         <div
-          className="max-w-4xl mx-auto h-[70vh] max-sm:h-[500px]"
+          className="max-w-4xl mx-auto h-[70vh] max-sm:h-[440px]"
           id="profile-section"
         >
           <spline-viewer
