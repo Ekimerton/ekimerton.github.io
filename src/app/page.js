@@ -16,7 +16,7 @@ export default function Home() {
         {/*<Navbar />*/}
         <Hero />
         <div className="flex items-center justify-center dark:bg-stone-950 bg-stone-100">
-          <article className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-700 dark:prose-blockquote:text-stone-300 prose-blockquote:text-stone-800 max-w-4xl w-full px-4 py-4 prose-h2:font-medium prose-h1:font-medium prose-p:font-medium prose-h3:font-medium">
+          <article className="prose prose-stone dark:prose-invert dark:prose-p:text-stone-400 prose-p:text-stone-700 dark:prose-blockquote:text-stone-300 prose-blockquote:text-stone-800 max-w-4xl w-full px-4 py-4 prose-h2:font-normal prose-h1:font-normal prose-p:font-normal prose-h3:font-normal">
             <AboutSection />
             {/*<ExperienceSection />*/}
             <ProjectsSection />
