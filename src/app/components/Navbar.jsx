@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { Github, Twitter } from "lucide-react";
+import { Github } from "lucide-react";
 
 export default function Navbar({}) {
   return (
@@ -8,12 +8,12 @@ export default function Navbar({}) {
       <div className="max-w-4xl mx-auto pt-3 px-5 flex justify-center max-sm:justify-center items-center text-zinc-700 dark:text-zinc-300">
         {/* Adjust the margins for visual centering */}
         <div className="flex-1">
-          <Button variant="link" asChild className="-ml-4">
-            <Link
-              href={"https://www.10xportfolio.com/"}
-              target="_blank"
-              className="font-semibold text-yellow-500 dark:text-yellow-400"
-            >
+          <Button
+            variant="link"
+            asChild
+            className="-ml-4 font-semibold text-yellow-500 dark:text-yellow-400"
+          >
+            <Link href={"https://www.10xportfolio.com/"} target="_blank">
               Buy this <span className="max-sm:hidden"> &nbsp;portfolio</span>
             </Link>
           </Button>
