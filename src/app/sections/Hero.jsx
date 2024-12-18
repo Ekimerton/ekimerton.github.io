@@ -10,7 +10,7 @@ export default function Hero() {
         strategy="lazyOnload"
       />
 
-      <div className="bg-zinc-50 dark:bg-zinc-900 w-full max-w-6xl rounded-lg">
+      <div className="bg-zinc-50 dark:bg-zinc-900 w-full max-w-6xl rounded-lg border-2 border-zinc-700/10">
         <div
           className="max-w-4xl mx-auto h-[540px] max-sm:h-[440px]"
           id="profile-section"
