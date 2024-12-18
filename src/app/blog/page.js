@@ -6,11 +6,11 @@ export default async function BlogHome() {
   const posts = await loadAllPosts();
 
   return (
-    <main className="min-h-screen w-full dark:bg-slate-950 bg-slate-100 flex justify-center">
-      <div className="prose prose-slate dark:prose-invert dark:prose-p:text-slate-400 prose-p:text-slate-700 max-w-4xl w-full px-5 py-4 pt-12 prose-h2:font-semibold prose-h1:font-bold">
+    <main className="min-h-screen w-full dark:bg-zinc-950 bg-zinc-100 flex justify-center">
+      <div className="prose prose-zinc dark:prose-invert dark:prose-p:text-zinc-400 prose-p:text-zinc-700 max-w-4xl w-full px-5 py-4 pt-12 prose-h2:font-semibold prose-h1:font-bold">
         <Link
           href="/"
-          className="text-sm no-underline text-slate-700 dark:text-slate-400 flex items-center mb-10 font-semibold"
+          className="text-sm no-underline text-zinc-700 dark:text-zinc-400 flex items-center mb-10 font-semibold"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />
           Back home

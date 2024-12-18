@@ -34,11 +34,11 @@ export default async function Post({ params }) {
   return (
     <div className="">
       {/*<Hero />*/}
-      <div className="flex justify-center dark:bg-slate-950 bg-slate-100">
-        <article className="prose prose-slate dark:prose-invert dark:prose-p:text-slate-400 prose-p:text-slate-700 dark:prose-blockquote:text-slate-300 prose-blockquote:text-slate-700 max-w-4xl w-full px-5 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-code:bg-slate-800 dark:prose-code:bg-slate-600 prose-code:text-slate-200 dark:prose-code:text-slate-300 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none prose-code:mx-0.5 prose-pre:bg-slate-800 dark:prose-pre:bg-slate-600 prose-code:break-words prose-h2:font-semibold prose-h1:font-bold">
+      <div className="flex justify-center dark:bg-zinc-950 bg-zinc-100">
+        <article className="prose prose-zinc dark:prose-invert dark:prose-p:text-zinc-400 prose-p:text-zinc-700 dark:prose-blockquote:text-zinc-300 prose-blockquote:text-zinc-700 max-w-4xl w-full px-5 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-code:bg-zinc-800 dark:prose-code:bg-zinc-600 prose-code:text-zinc-200 dark:prose-code:text-zinc-300 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none prose-code:mx-0.5 prose-pre:bg-zinc-800 dark:prose-pre:bg-zinc-600 prose-code:break-words prose-h2:font-semibold prose-h1:font-bold">
           <Link
             href="/blog"
-            className="text-sm no-underline text-slate-700 dark:text-slate-400 flex items-center mb-10 font-semibold"
+            className="text-sm no-underline text-zinc-700 dark:text-zinc-400 flex items-center mb-10 font-semibold"
           >
             <ArrowLeft className="w-4 h-4 mr-1" />
             Back to posts
@@ -48,14 +48,14 @@ export default async function Post({ params }) {
           <div id="author-info" className="flex gap-4 mb-12 items-center">
             <Image
               id="headshot"
-              className="h-14 w-14 rounded-md border-slate-700/10 border-2 m-0"
+              className="h-14 w-14 rounded-md border-zinc-700/10 border-2 m-0"
               src={frontMatter.author.imageUrl}
               width={50}
               height={50}
               alt="Headshot"
             />
             <div>
-              <p className="m-0 text-sm text-slate-950 dark:text-slate-50">
+              <p className="m-0 text-sm text-zinc-950 dark:text-zinc-50">
                 {frontMatter.author.name}
               </p>
               <a
