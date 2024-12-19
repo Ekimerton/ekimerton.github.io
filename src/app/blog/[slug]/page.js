@@ -35,7 +35,7 @@ export default async function Post({ params }) {
     <div className="">
       {/*<Hero />*/}
       <div className="flex justify-center dark:bg-zinc-950 bg-zinc-100">
-        <article className="prose prose-zinc dark:prose-invert dark:prose-p:text-zinc-400 prose-p:text-zinc-700 dark:prose-blockquote:text-zinc-300 prose-blockquote:text-zinc-700 max-w-4xl w-full px-5 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-code:bg-zinc-800 dark:prose-code:bg-zinc-600 prose-code:text-zinc-200 dark:prose-code:text-zinc-300 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none prose-code:mx-0.5 prose-pre:bg-zinc-800 dark:prose-pre:bg-zinc-600 prose-code:break-words prose-h2:font-semibold prose-h1:font-bold">
+        <article className="prose prose-zinc dark:prose-invert max-w-4xl w-full px-5 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-h2:font-semibold prose-h1:font-bold">
           <Link
             href="/blog"
             className="text-sm no-underline text-zinc-700 dark:text-zinc-400 flex items-center mb-10 font-semibold"

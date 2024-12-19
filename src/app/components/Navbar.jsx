@@ -5,7 +5,7 @@ import { Github } from "lucide-react";
 export default function Navbar({}) {
   return (
     <nav className="bg-zinc-100 dark:bg-zinc-950 top-0 w-full z-10">
-      <div className="max-w-4xl mx-auto pt-3 px-5 flex justify-center max-sm:justify-center items-center text-zinc-700 dark:text-zinc-300">
+      <div className="max-w-4xl mx-auto pt-4 px-5 flex justify-center max-sm:justify-center items-center text-zinc-700 dark:text-zinc-300">
         {/* Adjust the margins for visual centering */}
         <div className="flex-1">
           <Button
