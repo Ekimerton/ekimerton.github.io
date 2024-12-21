@@ -6,7 +6,7 @@ export default function StatBox({
 }) {
   return (
     <div
-      className={`row-span-1 col-span-1 rounded-xl border-2 border-zinc-700/10 bg-zinc-50 p-2 dark:bg-zinc-900  bg-cover bg-black/30 ${className}`}
+      className={`row-span-1 col-span-1 rounded-xl border-2 border-stone-700/10 bg-stone-50 p-2 dark:bg-stone-900  bg-cover bg-black/30 ${className}`}
     >
       <div className="relative w-full h-full flex flex-col items-center justify-center text-center">
         <p className="absolute m-0 top-0 text-sm">{topCaption}</p>
