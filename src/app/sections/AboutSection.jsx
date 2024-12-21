@@ -2,7 +2,7 @@ export default function AboutSection() {
   return (
     <>
       <p>
-        Hi, my name is Ekim. I&apos;m a software engineer by trade and an
+        Hi 👋! My name is Ekim. I&apos;m a software engineer by trade and an
         optimist by choice. This site showcases anything I&apos;m proud enough
         to showcase. Hope you like it :^)
       </p>
