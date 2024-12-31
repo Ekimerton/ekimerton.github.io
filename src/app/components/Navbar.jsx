@@ -4,8 +4,8 @@ import { Github } from "lucide-react";
 
 export default function Navbar({}) {
   return (
-    <nav className="bg-stone-100 dark:bg-stone-950 top-0 w-full z-10">
-      <div className="max-w-4xl mx-auto pt-4 px-5 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
+    <nav className="bg-slate-100 dark:bg-slate-950 top-0 w-full z-10">
+      <div className="max-w-3xl mx-auto pt-4 px-5 flex justify-center max-sm:justify-center items-center text-slate-700 dark:text-slate-300">
         {/* Adjust the margins for visual centering */}
         <div className="flex-1">
           <Button
@@ -34,13 +34,13 @@ export default function Navbar({}) {
         <div className="flex-1 flex justify-end items-end">
           <Button variant="link" asChild size="icon" className="-mr-2">
             <Link href={"https://github.com/Ekimerton/"} target="_blank">
-              <Github className="w-6 h-6 fill-stone-950 dark:fill-stone-50" />
+              <Github className="w-6 h-6 fill-slate-950 dark:fill-slate-50" />
             </Link>
           </Button>
           {/*
             <Button variant="link" asChild size="icon">
             <Link href={"https://x.com/Ekimerton"} target="_blank">
-              <Twitter className="w-6 h-6 fill-stone-950 dark:fill-stone-50" />
+              <Twitter className="w-6 h-6 fill-slate-950 dark:fill-slate-50" />
             </Link>
           </Button>
           */}

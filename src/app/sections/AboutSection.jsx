@@ -1,19 +1,29 @@
+import { Button } from "../components/ui/button";
+import EmailCopyButton from "../components/EmailCopyButton";
+
 export default function AboutSection() {
   return (
     <>
+      <p>Hello! 👋</p>
       <p>
-        Hi 👋! My name is Ekim. I&apos;m a software engineer by trade and an
-        optimist by choice. This site showcases anything I&apos;m proud enough
-        to showcase. Hope you like it :^)
+        My name is Ekim. I write code on the internet. This site showcases
+        anything I&apos;m proud enough to showcase. Hope you like it!
+        <span className="text-xl font-black ml-0.5">☺</span>
       </p>
-      <h2>For Recruiters</h2>
       <p>
-        I&apos;m a software engineer with experience across front-end, back-end,
-        and data engineering. Currently at Cachelan, I build software for solar
-        energy systems. Previously, I worked at Shopify, ran my own venture
-        Tinyshed, and tackled data projects at Wayfair. Check out my{" "}
-        <a href="https://www.linkedin.com/in/ekim-karabey/">LinkedIn</a> and
-        let&apos;s connect if you see a fit.
+        You can contact me via <EmailCopyButton />
+        or{" "}
+        <a href="https://www.linkedin.com/in/ekim-karabey/">
+          <Button className="py-1 px-2 mt-2 h-min bg-sky-100 hover:bg-sky-200 text-sky-900">
+            LinkedIn
+          </Button>
+        </a>{" "}
+        and check out my{" "}
+        <a href="/resume.pdf">
+          <Button className="py-1 px-2 mt-2 h-min bg-slate-200 hover:bg-slate-300 text-slate-900">
+            Resume
+          </Button>{" "}
+        </a>
       </p>
     </>
   );
