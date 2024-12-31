@@ -11,16 +11,15 @@ export default function AboutSection() {
         <span className="text-xl font-black ml-0.5">☺</span>
       </p>
       <p>
-        You can contact me via <EmailCopyButton />
-        or{" "}
-        <a href="https://www.linkedin.com/in/ekim-karabey/">
-          <Button className="py-1 px-2 mt-2 h-min bg-sky-100 hover:bg-sky-200 text-sky-900">
+        You can contact me via <EmailCopyButton /> or{" "}
+        <a href="https://www.linkedin.com/in/ekim-karabey/" target="_blank">
+          <Button className="py-1 px-2 mt-2 h-min bg-sky-200 hover:bg-sky-300 text-sky-800 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-sky-200">
             LinkedIn
           </Button>
         </a>{" "}
         and check out my{" "}
-        <a href="/resume.pdf">
-          <Button className="py-1 px-2 mt-2 h-min bg-slate-200 hover:bg-slate-300 text-slate-900">
+        <a href="/resume.pdf" target="_blank">
+          <Button className="py-1 px-2 mt-2 h-min bg-slate-200 hover:bg-slate-300 text-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-200">
             Resume
           </Button>{" "}
         </a>

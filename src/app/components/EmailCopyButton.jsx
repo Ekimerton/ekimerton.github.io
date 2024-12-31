@@ -7,7 +7,7 @@ export default function EmailCopyButton({}) {
   return (
     <Popover>
       <Button
-        className="py-1 px-2 mt-2 h-min bg-lime-100 hover:bg-lime-200 text-lime-900"
+        className="py-1 px-2 mt-2 h-min bg-lime-200 hover:bg-lime-300 text-lime-800 dark:bg-lime-800 dark:hover:bg-lime-700 dark:text-lime-200"
         variant="secondary"
         asChild
         onClick={() => {
