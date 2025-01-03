@@ -4,13 +4,12 @@ import EmailCopyButton from "../components/EmailCopyButton";
 export default function AboutSection() {
   return (
     <>
-      <p>Hello! 👋</p>
+      <p></p>
+      <h3>Hello! My name is Ekim. I write code on the internet 🌐</h3>
       <p>
-        My name is Ekim. I write code on the internet. This site showcases
-        anything I&apos;m proud enough to showcase. Hope you like it!
-        <span className="text-xl font-black ml-0.5">☺</span>
-      </p>
-      <p>
+        This site features anything I&apos;m proud enough to showcase. I hope
+        you like it!
+        <span className="text-xl font-black mx-0.5">☺</span>
         You can contact me via <EmailCopyButton /> or{" "}
         <a href="https://www.linkedin.com/in/ekim-karabey/" target="_blank">
           <Button className="py-1 px-2 mt-2 h-min bg-sky-200 hover:bg-sky-300 text-sky-800 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-sky-200">
