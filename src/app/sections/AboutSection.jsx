@@ -4,7 +4,6 @@ import EmailCopyButton from "../components/EmailCopyButton";
 export default function AboutSection() {
   return (
     <>
-      <p></p>
       <h3>Hello! My name is Ekim. I write code on the internet 🌐</h3>
       <p>
         This site features anything I&apos;m proud enough to showcase. I hope
