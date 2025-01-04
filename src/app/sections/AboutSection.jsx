@@ -17,7 +17,7 @@ export default function AboutSection() {
         </a>{" "}
         and check out my{" "}
         <a href="/resume.pdf" target="_blank">
-          <Button className="py-1 px-2 mt-2 h-min bg-slate-200 hover:bg-slate-300 text-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-200">
+          <Button className="py-1 px-2 mt-2 h-min bg-neutral-200 hover:bg-neutral-300 text-neutral-800 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200">
             Resume
           </Button>{" "}
         </a>
