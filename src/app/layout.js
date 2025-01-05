@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
+import { ThemeProvider } from "./components/ThemeProvider";
 
 export const metadata = {
   title: "Ekim's Portfolio",
@@ -15,9 +16,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className}>
-        {<Navbar />}
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {<Navbar />}
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
