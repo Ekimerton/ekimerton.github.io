@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <>
       <h3>Hello! My name is Ekim. I write code on the internet 🌐</h3>
-      <p>
+      <p className="leading-8">
         This site features anything I&apos;m proud enough to showcase. I hope
         you like it!
         <span className="text-xl font-black mx-0.5">☺</span>
