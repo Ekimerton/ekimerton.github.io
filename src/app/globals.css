@@ -20,3 +20,25 @@ body {
 .prose pre code {
   padding: 0;
 }
+
+.frosted {
+	position: absolute;
+	inset: 0;
+	height: 200%;
+	background: linear-gradient(
+	  to bottom,
+	  /*
+		Replace this with your site’s
+		actual background color:
+	  */
+	  hsl(0deg 0% 0%) 0%,
+	  transparent 50%
+	);
+	backdrop-filter: blur(16px);
+	mask-image: linear-gradient(
+	  to bottom,
+	  black 0% 50%,
+	  transparent 50% 100%
+	);
+	pointer-events: none;
+  }
