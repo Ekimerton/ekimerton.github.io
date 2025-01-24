@@ -11,8 +11,8 @@ export default function AboutSection() {
         <span className="text-xl font-black mx-0">☺</span>
       </p>
       <p>
-        This site features anything I&apos;m proud enough to showcase. I hope
-        you like it! You can contact me via <EmailCopyButton /> or{" "}
+        This site features anything I&apos;m proud enough to showcase. You can
+        contact me via <EmailCopyButton /> or{" "}
         <Button
           className="py-0.5 px-2 h-min bg-sky-200 hover:bg-sky-300 text-sky-800 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-sky-200 no-underline"
           asChild
@@ -23,7 +23,7 @@ export default function AboutSection() {
         </Button>{" "}
         and check out my{" "}
         <Button
-          className="py-0.5 px-2 h-min bg-neutral-200 hover:bg-neutral-300 text-neutral-800 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200 no-underline"
+          className="py-0.5 px-2 h-min bg-stone-200 hover:bg-stone-300 text-stone-800 dark:bg-stone-800 dark:hover:bg-stone-700 dark:text-stone-200 no-underline"
           asChild
         >
           <a href="/resume.pdf" target="_blank">

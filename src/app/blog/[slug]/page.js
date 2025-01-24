@@ -34,11 +34,11 @@ export default async function Post({ params }) {
   return (
     <div className="">
       {/*<Hero />*/}
-      <div className="flex justify-center dark:bg-neutral-950 bg-neutral-100">
-        <article className="prose prose-neutral dark:prose-invert max-w-3xl w-full px-5 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-h2:font-semibold prose-h1:font-bold">
+      <div className="flex justify-center dark:bg-stone-950 bg-stone-100">
+        <article className="prose prose-stone dark:prose-invert max-w-2xl w-full px-5 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-h2:font-semibold prose-h1:font-bold">
           <Link
             href="/blog"
-            className="text-sm no-underline text-neutral-700 dark:text-neutral-400 flex items-center mb-10 font-semibold"
+            className="text-sm no-underline text-stone-700 dark:text-stone-400 flex items-center mb-10 font-semibold"
           >
             <ArrowLeft className="w-4 h-4 mr-1" />
             Back to posts
@@ -48,14 +48,14 @@ export default async function Post({ params }) {
           <div id="author-info" className="flex gap-4 mb-12 items-center">
             <Image
               id="headshot"
-              className="h-14 w-14 rounded-md border-neutral-700/10 border-2 m-0"
+              className="h-14 w-14 rounded-md border-stone-700/10 border-2 m-0"
               src={frontMatter.author.imageUrl}
               width={50}
               height={50}
               alt="Headshot"
             />
             <div>
-              <p className="m-0 text-sm text-neutral-950 dark:text-neutral-50">
+              <p className="m-0 text-sm text-stone-950 dark:text-stone-50">
                 {frontMatter.author.name}
               </p>
               <a

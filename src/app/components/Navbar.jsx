@@ -4,8 +4,8 @@ import { DarkModeToggle } from "./DarkModeToggle";
 
 export default function Navbar({}) {
   return (
-    <nav className="bg-neutral-100 dark:bg-neutral-950 top-0 w-full z-10">
-      <div className="max-w-3xl mx-auto py-2 px-4 flex justify-center max-sm:justify-center items-center text-neutral-700 dark:text-neutral-300">
+    <nav className="bg-stone-100 dark:bg-stone-950 top-0 w-full z-10">
+      <div className="max-w-2xl mx-auto py-2 px-4 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
         <div className="flex-1">
           <Button
             variant="link"

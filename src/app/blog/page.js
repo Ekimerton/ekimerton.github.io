@@ -6,8 +6,8 @@ export default async function BlogHome() {
   const posts = await loadAllPosts();
 
   return (
-    <main className="h-full w-full dark:bg-neutral-950 bg-neutral-100 flex justify-center">
-      <article className="prose prose-neutral dark:prose-invert max-w-3xl w-full px-4 py-4 mt-24 prose-h1:text-base prose-h2:text-base prose-h3:text-base">
+    <main className="h-full w-full dark:bg-stone-950 bg-stone-100 flex justify-center">
+      <article className="prose prose-stone dark:prose-invert max-w-2xl w-full px-4 py-4 mt-24 prose-h1:text-base prose-h2:text-base prose-h3:text-base">
         <div>
           <h3>Blog Posts</h3>
           {posts.map(({ slug, frontMatter, preview }) => (

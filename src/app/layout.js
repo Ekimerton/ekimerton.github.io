@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="dark:bg-neutral-950 bg-neutral-100 h-full">
+          <div className="dark:bg-stone-950 bg-stone-100 h-full">
             {<Navbar />}
             {children}
             {/*<Footer />*/}
