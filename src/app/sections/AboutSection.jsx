@@ -4,14 +4,15 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <>
-      <h2>About Me</h2>
-      <p>Hello! My name is Ekim. I write code on the internet 🌐</p>
+    <div>
+      <h3>About Me</h3>
+      <p>
+        Hello! My name is Ekim. I write code on the internet{" "}
+        <span className="text-xl font-black mx-0">☺</span>
+      </p>
       <p>
         This site features anything I&apos;m proud enough to showcase. I hope
-        you like it!
-        <span className="text-xl font-black mx-0.5">☺</span>
-        You can contact me via <EmailCopyButton /> or{" "}
+        you like it! You can contact me via <EmailCopyButton /> or{" "}
         <Button
           className="py-0.5 px-2 h-min bg-sky-200 hover:bg-sky-300 text-sky-800 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-sky-200 no-underline"
           asChild
@@ -30,6 +31,6 @@ export default function AboutSection() {
           </a>
         </Button>{" "}
       </p>
-    </>
+    </div>
   );
 }

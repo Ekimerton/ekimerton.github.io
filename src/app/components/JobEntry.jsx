@@ -9,11 +9,11 @@ export default function JobEntry({
 }) {
   return (
     <>
-      <div className="mt-[1.6em] mb-[0.6em] flex justify-between max-sm:flex-col">
-        <h3 className="mt-0 mb-0">
+      <div className="flex justify-between max-sm:flex-col">
+        <h4 className="mt-0 mb-0 font-normal">
           <span className="font-normal">{title} @</span> {company}
-        </h3>
-        <p className="m-0">{time}</p>
+        </h4>
+        <p className="m-0 italic">{time}</p>
       </div>
       <blockquote className="not-italic font-normal">{description}</blockquote>
     </>

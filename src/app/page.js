@@ -11,17 +11,15 @@ import {
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen w-full">
-        <Hero />
-        <div className="flex items-center justify-center dark:bg-neutral-950 bg-neutral-100">
-          <article className="prose prose-neutral dark:prose-invert max-w-3xl w-full px-4 py-4 prose-h2:font-semibold prose-h1:font-bold">
-            <AboutSection />
-            {/*<ExperienceSection />*/}
-            <ProjectsSection />
-            {/*<EducationSection />*/}
-            <BlogSection />
-          </article>
-        </div>
+      <main className="h-full w-full flex items-center justify-center">
+        {/*<Hero />*/}
+        <article className="prose prose-neutral dark:prose-invert max-w-3xl w-full px-4 py-4 prose-h2:font-semibold prose-h1:font-bold prose-h1:text-base prose-h2:text-base prose-h3:text-base  flex flex-col gap-6 mt-24 items-around">
+          <AboutSection />
+          {/*<ExperienceSection />*/}
+          {/*<ProjectsSection />*/}
+          {/*<EducationSection />*/}
+          <BlogSection />
+        </article>
       </main>
     </>
   );

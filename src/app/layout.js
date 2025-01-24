@@ -22,9 +22,11 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          {<Navbar />}
-          {children}
-          <Footer />
+          <div className="dark:bg-neutral-950 bg-neutral-100 h-full">
+            {<Navbar />}
+            {children}
+            {/*<Footer />*/}
+          </div>
         </ThemeProvider>
       </body>
     </html>
