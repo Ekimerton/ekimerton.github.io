@@ -1,7 +1,7 @@
 import ProjectEntry from "../components/ProjectEntry";
 import StatBox from "../components/StatBox";
 
-export default function ProjectsSection({}) {
+export default function ProjectsSection({ }) {
   return (
     <>
       <h2>Projects</h2>
@@ -24,13 +24,6 @@ export default function ProjectsSection({}) {
           number="4"
           bottomCaption="Times ...And Counting!"
           className="max-md:hidden"
-        />
-        <ProjectEntry
-          size="medium"
-          title="10X Portfolio"
-          content="A modern Next.js portfolio template."
-          imageSrc="/images/10xportfolio.png"
-          url="https://10xportfolio.com/"
         />
       </div>
     </>
