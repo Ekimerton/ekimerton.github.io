@@ -1,5 +1,3 @@
-import Hero from "./sections/Hero";
-
 import {
   AboutSection,
   ExperienceSection,
