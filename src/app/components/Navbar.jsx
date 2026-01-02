@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 const NAV_ITEMS = [
   { name: "Home", href: "/" },
-  { name: "Blog", href: "/blog" },
   { name: "The Wall", href: "/the-wall" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export default function Navbar({ }) {
@@ -17,7 +17,7 @@ export default function Navbar({ }) {
 
   return (
     <nav className="bg-stone-100 dark:bg-stone-950 top-0 w-full z-10">
-      <div className="mx-auto py-2 px-4 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
+      <div className="mx-auto py-3 px-4 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
         <div className="flex-1">
         </div>
         <div className="flex items-center justify-center gap-1">

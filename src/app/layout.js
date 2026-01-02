@@ -22,9 +22,11 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="dark:bg-stone-950 bg-stone-100 h-full">
-            {<Navbar />}
-            {children}
+          <div className="dark:bg-stone-950 bg-stone-100 h-screen flex flex-col overflow-hidden">
+            <Navbar />
+            <div className="flex-1 min-h-0 overflow-y-auto">
+              {children}
+            </div>
             {/*<Footer />*/}
           </div>
         </ThemeProvider>
