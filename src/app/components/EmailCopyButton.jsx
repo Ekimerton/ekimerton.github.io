@@ -3,11 +3,11 @@
 import { Button } from "./ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
-export default function EmailCopyButton({}) {
+export default function EmailCopyButton({ }) {
   return (
     <Popover>
       <Button
-        className="py-0.5 px-2 h-min bg-lime-200 hover:bg-lime-300 text-lime-800 dark:bg-lime-800 dark:hover:bg-lime-700 dark:text-lime-200"
+        className="py-0.5 px-2 h-min !bg-[#EA4335]/20 hover:!bg-[#EA4335]/40 !text-[#EA4335] font-semibold transition-all duration-200 border-none shadow-none"
         asChild
         onClick={() => {
           navigator.clipboard.writeText("ekim0252@gmail.com");

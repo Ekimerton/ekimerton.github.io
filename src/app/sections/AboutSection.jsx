@@ -7,23 +7,32 @@ export default function AboutSection() {
     <div>
       <h3>About Me</h3>
       <p>
-        Hello! My name is Ekim. I write code on the internet{" "}
-        <span className="text-xl font-black mx-0">☺</span>
+        Hello! My name is Ekim. I write code on the internet&nbsp;
+        <span className="text-xl font-black -mx-1">☺</span>
       </p>
       <p>
-        This site features anything I&apos;m proud enough to showcase. You can
-        contact me via <EmailCopyButton /> or{" "}
+        I currently work at{" "}
+        <span className="font-semibold">
+          <span className="text-[#4285F4]">G</span>
+          <span className="text-[#EA4335]">o</span>
+          <span className="text-[#FBBC05]">o</span>
+          <span className="text-[#4285F4]">g</span>
+          <span className="text-[#34A853]">l</span>
+          <span className="text-[#EA4335]">e</span>
+        </span>{" "}
+        and make projects in my spare time. You can reach me via{" "}
+        <EmailCopyButton /> or{" "}
         <Button
-          className="py-0.5 px-2 h-min bg-sky-200 hover:bg-sky-300 text-sky-800 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-sky-200 no-underline"
+          className="py-0.5 px-2 h-min !bg-[#4285F4]/20 hover:!bg-[#4285F4]/40 !text-[#4285F4] font-semibold transition-all duration-200 no-underline border-none shadow-none"
           asChild
         >
           <a href="https://www.linkedin.com/in/ekim-karabey/" target="_blank">
             LinkedIn
           </a>
         </Button>{" "}
-        and check out my{" "}
+        or check out my{" "}
         <Button
-          className="py-0.5 px-2 h-min bg-stone-200 hover:bg-stone-300 text-stone-800 dark:bg-stone-800 dark:hover:bg-stone-700 dark:text-stone-200 no-underline"
+          className="py-0.5 px-2 h-min !bg-[#34A853]/20 hover:!bg-[#34A853]/40 !text-[#34A853] font-semibold transition-all duration-200 no-underline border-none shadow-none"
           asChild
         >
           <a href="/resume.pdf" target="_blank">
