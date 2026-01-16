@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import SpotifyCard from "@/app/components/SpotifyCard";
 
 const CARDS = [
     { id: "one", area: "card-one" },
-    { id: "two", area: "card-two" },
+    { id: "two", area: "card-two", component: <SpotifyCard /> },
     { id: "three", area: "card-three" },
     { id: "four", area: "card-four" },
     { id: "five", area: "card-five" },
@@ -32,7 +33,7 @@ const itemVariants = {
 
 export default function TheWall() {
     return (
-        <main className="h-full w-full dark:bg-stone-950 bg-stone-100 flex flex-col p-4 pt-0 overflow-hidden">
+        <main className="h-full w-full dark:bg-stone-950 bg-stone-100 flex flex-col p-4 pt-1 overflow-hidden">
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -54,13 +55,17 @@ export default function TheWall() {
                     <motion.div
                         key={card.id}
                         variants={itemVariants}
-                        className="rounded-xl bg-stone-200 dark:bg-stone-800/50 border border-stone-300 dark:border-stone-700 flex items-center justify-center focus:border-blue-200"
+                        className="rounded-xl bg-stone-200 dark:bg-stone-800/50 border border-stone-300 dark:border-stone-700 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-colors"
                         style={{ gridArea: card.area }}
                         tabIndex={0}
                     >
-                        <span className="font-mono text-sm text-stone-500 dark:text-stone-400">
-                            [ card {card.id} ]
-                        </span>
+                        {card.component ? (
+                            card.component
+                        ) : (
+                            <span className="font-mono text-sm text-stone-500 dark:text-stone-400">
+                                [ card {card.id} ]
+                            </span>
+                        )}
                     </motion.div>
                 ))}
             </motion.div>
