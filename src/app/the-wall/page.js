@@ -2,12 +2,13 @@
 
 import { motion } from "framer-motion";
 import SpotifyCard from "@/app/components/SpotifyCard";
+import CursorCard from "@/app/components/CursorCard";
 
 const CARDS = [
     { id: "one", area: "card-one" },
     { id: "two", area: "card-two", component: <SpotifyCard /> },
     { id: "three", area: "card-three" },
-    { id: "four", area: "card-four" },
+    { id: "four", area: "card-four", component: <CursorCard /> },
     { id: "five", area: "card-five" },
     { id: "six", area: "card-six" },
     { id: "seven", area: "card-seven" },
