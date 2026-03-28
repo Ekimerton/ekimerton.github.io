@@ -4,11 +4,10 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
 
 const NAV_ITEMS = [
   { name: "Home", href: "/" },
-  { name: "The Wall", href: "/the-wall" },
+  { name: "Game", href: "/my-garden" },
   { name: "Blog", href: "/blog" },
 ];
 
@@ -31,21 +30,15 @@ export default function Navbar({ }) {
                 key={item.href}
                 variant="ghost"
                 asChild
-                className="relative hover:bg-transparent hover:text-current dark:hover:bg-transparent dark:hover:text-current"
+                className={`relative ${isActive
+                    ? "text-black dark:text-white hover:bg-transparent hover:text-black dark:hover:bg-transparent dark:hover:text-white"
+                    : "hover:bg-stone-200 dark:hover:bg-stone-800 hover:text-stone-700 dark:hover:text-stone-300"
+                  }`}
               >
                 <Link href={item.href} className="font-semibold">
                   <span className="relative z-10">{item.name}</span>
                   {isActive && (
-                    <motion.div
-                      layout
-                      layoutId="navbar-active"
-                      className="absolute inset-0 bg-stone-200 dark:bg-stone-800 rounded-md"
-                      transition={{
-                        type: "spring",
-                        bounce: 0,
-                        duration: 0.3
-                      }}
-                    />
+                    <div className="absolute inset-0 bg-stone-200 dark:bg-stone-800 rounded-md" />
                   )}
                 </Link>
               </Button>
