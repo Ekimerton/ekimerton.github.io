@@ -31,8 +31,8 @@ export default function Navbar({ }) {
                 variant="ghost"
                 asChild
                 className={`relative ${isActive
-                    ? "text-black dark:text-white hover:bg-transparent hover:text-black dark:hover:bg-transparent dark:hover:text-white"
-                    : "hover:bg-stone-200 dark:hover:bg-stone-800 hover:text-stone-700 dark:hover:text-stone-300"
+                  ? "text-black dark:text-white hover:bg-transparent hover:text-black dark:hover:bg-transparent dark:hover:text-white"
+                  : "hover:bg-stone-200 dark:hover:bg-stone-800 hover:text-stone-700 dark:hover:text-stone-300"
                   }`}
               >
                 <Link href={item.href} className="font-semibold">

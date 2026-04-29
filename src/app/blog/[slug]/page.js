@@ -1,6 +1,4 @@
-import { loadPost } from "../loadPosts";
-import Image from "next/image";
-import { getStaticPaths } from "../loadPosts";
+import { loadPost, getStaticPaths } from "../loadPosts";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -13,7 +11,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const { frontMatter } = await loadPost(slug);
 
   const keywordsArray = frontMatter.keywords
@@ -28,7 +26,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Post({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const { frontMatter, content } = await loadPost(slug);
 
   return (
@@ -45,28 +43,7 @@ export default async function Post({ params }) {
           </Link>
           <p className="text-sm">{frontMatter.date}</p>
           <h1 className="">{frontMatter.title}</h1>
-          <div id="author-info" className="flex gap-4 mb-12 items-center">
-            <Image
-              id="headshot"
-              className="h-14 w-14 rounded-md border-stone-700/10 border-2 m-0"
-              src={frontMatter.author.imageUrl}
-              width={50}
-              height={50}
-              alt="Headshot"
-            />
-            <div>
-              <p className="m-0 text-sm text-stone-950 dark:text-stone-50">
-                {frontMatter.author.name}
-              </p>
-              <a
-                className="m-0 text-sm"
-                href={frontMatter.author.url}
-                target="_blank"
-              >
-                {frontMatter.author.handle}
-              </a>
-            </div>
-          </div>
+
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </article>
       </div>

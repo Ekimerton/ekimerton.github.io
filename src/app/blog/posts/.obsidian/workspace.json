@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "8349c1b83cdb3b53",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc5cb70bdb33ef18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a65a5672c1b1411",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seattle Style Teriyaki Sauce.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Seattle Style Teriyaki Sauce"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6b742ec011d70c64",
+    "type": "split",
+    "children": [
+      {
+        "id": "70b0b1016f5a42a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3cb43aa06a544d67",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "77ecb5692a1e47c0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f6d1fb8b70456a26",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c005e64647107544",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9efa2e52b263cc8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fad4330c8fa47b2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Seattle Style Teriyaki Sauce.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Seattle Style Teriyaki Sauce"
+            }
+          },
+          {
+            "id": "37ef04865d382c3c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Seattle Style Teriyaki Sauce.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Seattle Style Teriyaki Sauce"
+            }
+          },
+          {
+            "id": "4c3aff90a5622897",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5b2d65684911bce9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e1424e96628d4187",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Seattle Style Teriyaki Sauce.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Seattle Style Teriyaki Sauce"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7a65a5672c1b1411",
+  "lastOpenFiles": [
+    "Seattle Style Teriyaki Sauce.md",
+    "Untitled"
+  ]
+}
