@@ -31,7 +31,6 @@ export default async function Post({ params }) {
 
   return (
     <div className="">
-      {/*<Hero />*/}
       <div className="flex justify-center dark:bg-stone-950 bg-stone-100">
         <article className="prose prose-stone dark:prose-invert max-w-3xl w-full px-4 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-h2:font-semibold prose-h1:font-bold">
           <Link
