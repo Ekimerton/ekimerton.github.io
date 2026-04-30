@@ -42,7 +42,6 @@ export default async function Post({ params }) {
             <ArrowLeft className="w-4 h-4 mr-1" />
             Back to posts
           </Link>
-          <p className="text-sm">{frontMatter.date}</p>
           <h1 className="">{frontMatter.title}</h1>
 
           <div dangerouslySetInnerHTML={{ __html: content }} />

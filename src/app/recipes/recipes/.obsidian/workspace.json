@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seattle Style Teriyaki Sauce.md",
+                "file": "Seattle Style Teriyaki Salad Sauce.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Seattle Style Teriyaki Sauce"
+              "title": "Seattle Style Teriyaki Salad Sauce"
             }
           },
           {
@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Salmon Poke Bowl"
             }
+          },
+          {
+            "id": "9bba52fb24ae2090",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grocery Store Rotisserie Pho.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Grocery Store Rotisserie Pho"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -198,10 +212,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "0319ec977db80ca6",
+  "active": "9bba52fb24ae2090",
   "lastOpenFiles": [
-    "Seattle Style Teriyaki Sauce.md",
+    "Seattle Style Teriyaki Salad Sauce.md",
     "Salmon Poke Bowl.md",
+    "Grocery Store Rotisserie Pho.md",
     "Untitled"
   ]
 }

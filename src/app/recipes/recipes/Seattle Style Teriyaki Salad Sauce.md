@@ -1,6 +1,6 @@
 My take on a seattle takeaway classic - specifically the mayo-based salad dressing.
 
-# Ingredients
+## Ingredients
 
 * 1/2 cup mayo
 * 2 tbsp rice vinegar
@@ -9,11 +9,11 @@ My take on a seattle takeaway classic - specifically the mayo-based salad dressi
 * bit of sesame oil
 * 1 garlic
 
-# Steps
+## Steps
 
 1. Chop garlic finely
 2. Mix everything and put into a sauce bottle or something
 
-# Sources
+## Sources
 
 https://www.youtube.com/watch?v=CE2ceMKvXtk&t=263s
