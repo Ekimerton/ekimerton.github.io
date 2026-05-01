@@ -1,3 +1,8 @@
+---
+date: April 29, 2026
+keywords: hello, world
+---
+
 My take on a seattle takeaway classic - specifically the mayo-based salad dressing.
 
 ## Ingredients

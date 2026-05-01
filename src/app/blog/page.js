@@ -11,16 +11,16 @@ export default async function BlogHome() {
       <TextContainer className="mt-8">
         <h1>My Blog</h1>
         <div>
-          {posts.map(({ slug, frontMatter, preview }) => (
+          {posts.map(({ slug, frontMatter }) => (
             <div key={slug}>
               <p>
                 <Link href={`/blog/${slug}`} className="no-underline font-normal text-stone-600 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200">
-                  <span className="mr-4 font-semibold text-stone-900 dark:text-stone-100">{frontMatter.title}</span> {preview}...
+                  <span className="mr-4">{frontMatter.date}</span>
+                  <span className="font-semibold text-stone-900 dark:text-stone-100">{frontMatter.title}</span>
                 </Link>
               </p>
             </div>
           ))}
-          <p className="text-light text-center text-sm">More coming soon!</p>
         </div>
       </TextContainer>
     </main>

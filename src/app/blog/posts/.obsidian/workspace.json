@@ -11,10 +11,14 @@
             "id": "7a65a5672c1b1411",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "hello-world.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "hello-world"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "7a65a5672c1b1411",
   "lastOpenFiles": [
+    "Untitled.md",
     "hello-world.md",
     "Seattle Style Teriyaki Sauce.md",
     "Untitled"

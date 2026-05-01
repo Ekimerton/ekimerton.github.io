@@ -1,3 +1,8 @@
+---
+date: April 29, 2026
+keywords: hello, world
+---
+
 This is a fairly non-traditional recipe that I've been making for a while. A more traditional version is Kenji Lopez's https://www.seriouseats.com/ahi-poke-hawaiian-raw-tuna-salad-recipe but Hannah likes this one more...
 
 Make sure your fish is either farmed, or has been frozen at some point, since you'll be eating it raw.

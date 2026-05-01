@@ -1,4 +1,13 @@
-This recipe started because of two things: 1: I love pho. 2: I like making broth at home. These two aspects of me clicked together when I saw a guy make pho broth on tiktok. I don't remember what video it was now, but I've taken that recipe, applied my own research on top, and have come up with what I think is a pretty tasty (and easy!) recipe.
+---
+date: April 29, 2026
+keywords: hello, world
+---
+
+This recipe started because of two things: 
+1) I love pho
+2) I like making broth at home
+
+These two aspects of me clicked together when I saw a guy make pho broth on tiktok. I don't remember what video it was now, but I've taken that recipe, applied my own research on top, and have come up with what I think is a pretty tasty (and easy!) recipe.
 ##  Ingredients
 - 1 Whole Rotisserie Chicken
 - 1 Yellow Onion
