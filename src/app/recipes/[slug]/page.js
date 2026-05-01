@@ -32,7 +32,7 @@ export default async function Post({ params }) {
   return (
     <div className="">
       <div className="flex justify-center dark:bg-stone-950 bg-stone-100">
-        <article className="prose prose-stone dark:prose-invert max-w-3xl w-full px-4 py-4 pt-12 min-h-screen prose-code:py-1 prose-code:px-2 prose-h2:font-semibold prose-h1:font-bold">
+        <article className="prose prose-stone dark:prose-invert max-w-3xl w-full px-4 py-4 pt-12 max-sm:pt-4 min-h-screen prose-code:py-1 prose-code:px-2 prose-h2:font-semibold prose-h1:font-bold">
           <Link
             href="/recipes"
             className="text-sm no-underline text-stone-700 dark:text-stone-400 flex items-center mb-10 font-semibold"

@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function AboutSection() {
   return (
     <div>
-      <h3>About Me</h3>
       <p>
         Hello! My name is Ekim. I write code on the internet&nbsp;
         <span className="text-xl font-black -mx-1">☺</span>

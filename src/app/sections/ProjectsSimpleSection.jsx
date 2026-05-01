@@ -8,7 +8,7 @@ export default async function ProjectsSimpleSection({ }) {
       <Link href={`https://hexcodle.com`} className="no-underline">
         <div className="hover:bg-stone-200 hover:text-stone-900 dark:hover:bg-stone-800 dark:hover:text-stone-50 rounded-md px-3 py-2 -mx-3">
           <h4 className="mt-0 font-normal">Hexcodle</h4>
-          <p className="mb-0 mt-2 font-normal text-stone-500 dark:text-stone-400">
+          <p className="mb-0 mt-2 font-normal text-stone-700 dark:text-stone-300">
             Daily wordle-like hexcode guessing game. <i>~100k players last year</i>
           </p>
         </div>
