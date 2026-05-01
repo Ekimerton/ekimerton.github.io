@@ -1,13 +1,12 @@
 import { Button } from "../components/ui/button";
 import EmailCopyButton from "../components/EmailCopyButton";
-import Link from "next/link";
 
 export default function AboutSection() {
   return (
     <div>
+      <h1>My Portfolio</h1>
       <p>
-        Hello! My name is Ekim. I write code on the internet&nbsp;
-        <span className="text-xl font-black -mx-1">☺</span>
+        Hello! My name is Ekim. I write code on the internet and post it, occasionally :)
       </p>
       <p>
         I currently work at{" "}

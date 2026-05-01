@@ -3,17 +3,14 @@ import Link from "next/link";
 export default async function ProjectsSimpleSection({ }) {
   return (
     <div>
-      <h3>Projects</h3>
-
-      <Link href={`https://hexcodle.com`} className="no-underline">
-        <div className="hover:bg-stone-200 hover:text-stone-900 dark:hover:bg-stone-800 dark:hover:text-stone-50 rounded-md px-3 py-2 -mx-3">
-          <h4 className="mt-0 font-normal">Hexcodle</h4>
-          <p className="mb-0 mt-2 font-normal text-stone-700 dark:text-stone-300">
-            Daily wordle-like hexcode guessing game. <i>~100k players last year</i>
-          </p>
-        </div>
-      </Link>
-
+      <h1 className="mt-8">My Projects</h1>
+      <div>
+        <p>
+          <Link href={`https://hexcodle.com`} className="no-underline font-normal text-stone-600 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200">
+            <span className="mr-4 font-semibold text-stone-900 dark:text-stone-100">Hexcodle</span> Daily wordle-like hexcode guessing game. <i>~100k players last year</i>
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Open_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PageHeader from "./components/PageHeader";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });

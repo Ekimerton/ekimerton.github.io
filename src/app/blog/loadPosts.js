@@ -13,17 +13,24 @@ function createSlug(filename) {
 }
 
 function getPostMetadata(originalTitle, content, data, fullPath) {
-  // Extract first sentence for description
-  const plainText = content.replace(/\[(.+?)\]\(.+?\)|[*_`#>]/g, "$1").trim();
-  const firstSentenceMatch = plainText.match(/[^.!?\n]+[.!?\n]/);
-  const firstSentence = firstSentenceMatch ? firstSentenceMatch[0].trim() : plainText.slice(0, 150).trim();
+  // Extract first 100 chars for description from the first paragraph
+  const noHeaders = content.replace(/^#+\s+.*$/gm, "");
+  const firstParagraph = noHeaders.split(/\n\s*\n/).find(p => p.trim().length > 0) || "";
+  const plainText = firstParagraph.replace(/\[(.+?)\]\(.+?\)|[*_`#>]/g, "$1").trim();
+  let description = plainText.length > 100 ? plainText.slice(0, 100) : plainText;
+  if (plainText.length > 100) {
+    const lastSpace = description.lastIndexOf(" ");
+    if (lastSpace > 0) {
+      description = description.slice(0, lastSpace);
+    }
+  }
 
   const stat = fs.statSync(fullPath);
   const dateStr = data.date || format(stat.mtime, "MMMM do, yyyy");
 
   return {
     title: originalTitle,
-    description: firstSentence,
+    description: description,
     date: dateStr,
     author: {
       name: "Ekimerton",

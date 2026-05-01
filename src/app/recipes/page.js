@@ -1,25 +1,28 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { loadAllRecipes } from "./loadRecipes";
+import TextContainer from "../components/TextContainer";
 
 export default async function RecipesHome() {
   const recipes = await loadAllRecipes();
 
   return (
     <main className="h-full w-full dark:bg-stone-950 bg-stone-100 flex justify-center">
-      <article className="prose prose-stone dark:prose-invert max-w-3xl w-full px-4 py-4 mt-24 max-sm:mt-0 max-sm:pt-0 prose-h1:text-base prose-h2:text-base prose-h3:text-base prose-p:text-stone-500 prose-p:dark:text-stone-400">
+      <TextContainer className="mt-8">
+        <h1>My Recipes</h1>
         <div>
           {recipes.map(({ slug, frontMatter, preview }) => (
             <div key={slug}>
-              <Link href={`/recipes/${slug}`} className="no-underline">
-                <h3 className="">{frontMatter.title}</h3>
-                <p className="mt-0 font-normal">{preview}..</p>
-              </Link>
+              <p>
+                <Link href={`/recipes/${slug}`} className="no-underline font-normal text-stone-600 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200">
+                  <span className="mr-4 font-semibold text-stone-900 dark:text-stone-100">{frontMatter.title}</span> {preview}...
+                </Link>
+              </p>
             </div>
           ))}
           <p className="text-light text-center text-sm">More coming soon!</p>
         </div>
-      </article>
+      </TextContainer>
     </main>
   );
 }
