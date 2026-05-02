@@ -8,7 +8,7 @@ export default async function BlogHome() {
 
   return (
     <main className="h-full w-full dark:bg-stone-950 bg-stone-100 flex justify-center">
-      <TextContainer className="mt-8">
+      <TextContainer className="mt-8 max-sm:mt-0">
         <h1>My Blog</h1>
         <div>
           {posts.map(({ slug, frontMatter }) => (

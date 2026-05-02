@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <>
       <main className="h-full w-full flex justify-center text-pretty">
-        <TextContainer className="flex flex-col mt-8">
+        <TextContainer className="flex flex-col mt-8 max-sm:mt-0">
           <AboutSection />
-          <ProjectsSimpleSection />
         </TextContainer>
       </main>
     </>

@@ -1,5 +1,6 @@
 import { Button } from "../components/ui/button";
 import EmailCopyButton from "../components/EmailCopyButton";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -18,7 +19,7 @@ export default function AboutSection() {
           <span className="text-[#34A853]">l</span>
           <span className="text-[#EA4335]">e</span>
         </span>{" "}
-        and make projects in my spare time. You can reach me via{" "}
+        and make projects in my spare time. Below are some that I'm proud of. You can reach me via{" "}
         <EmailCopyButton /> or{" "}
         <Button
           className="py-0.5 px-2 h-min !bg-[#4285F4]/20 hover:!bg-[#4285F4]/40 !text-[#4285F4] font-semibold transition-all duration-200 no-underline border-none shadow-none"
@@ -37,6 +38,11 @@ export default function AboutSection() {
             Resume
           </a>
         </Button>{" "}
+      </p>
+      <p>
+        <Link href={`https://hexcodle.com`} className="no-underline font-normal text-stone-600 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200">
+          <span className="mr-4 font-semibold text-stone-900 dark:text-stone-100">Hexcodle</span> Daily wordle-like hexcode guessing game. <i>~100k players last year</i>
+        </Link>
       </p>
     </div>
   );
