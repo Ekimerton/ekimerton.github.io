@@ -6,7 +6,6 @@ import { ExternalLink } from "lucide-react";
 export default function AboutSection() {
   return (
     <div>
-      <h1>My Portfolio</h1>
       <p>
         Hello! My name is Ekim. I write code on the internet and post it, occasionally :)
       </p>

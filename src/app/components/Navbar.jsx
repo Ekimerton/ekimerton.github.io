@@ -16,9 +16,11 @@ export default function Navbar({ }) {
 
   return (
     <nav className="bg-stone-100 dark:bg-stone-950 top-0 w-full z-10">
-      <div className="mx-auto max-w-5xl py-3 px-4 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
+      <div className="mx-auto max-w-5xl py-3 px-3 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
+        <div className="flex-1 flex">
+          <p className="mx-4 max-sm:mx-2 font-caveat text-2xl">Ekim</p>
+        </div>
         <div className="flex items-center justify-center gap-1">
-          <p className="mx-4 max-sm:mx-2 font-medium">Ekim's:</p>
           {NAV_ITEMS.map((item) => {
             const isActive =
               pathname === item.href ||
@@ -29,7 +31,7 @@ export default function Navbar({ }) {
                 key={item.href}
                 variant="ghost"
                 asChild
-                className={`relative ${isActive
+                className={`relative max-sm:px-2 max-sm:h-8 max-sm:text-xs ${isActive
                   ? "text-black dark:text-white hover:bg-transparent hover:text-black dark:hover:bg-transparent dark:hover:text-white"
                   : "hover:bg-stone-200 dark:hover:bg-stone-800 hover:text-stone-700 dark:hover:text-stone-300"
                   }`}

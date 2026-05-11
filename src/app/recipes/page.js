@@ -8,7 +8,6 @@ export default async function RecipesHome() {
   return (
     <main className="h-full w-full dark:bg-stone-950 bg-stone-100 flex justify-center">
       <TextContainer className="mt-8 max-sm:mt-0">
-        <h1>My Recipes</h1>
         <div>
           {recipes.map(({ slug, frontMatter }) => (
             <div key={slug}>

@@ -6,7 +6,7 @@ export default function TextContainer({ children, className }) {
     <article
       className={twMerge(
         clsx(
-          `prose prose-rose dark:prose-invert max-w-3xl w-full p-8 antialiased
+          `prose prose-rose dark:prose-invert max-w-3xl w-full p-5 antialiased pt-0
            prose-h1:font-medium prose-h1:text-2xl
            prose-h2:font-medium prose-h2:text-xl
            prose-h3:font-medium prose-h3:text-base
