@@ -16,9 +16,9 @@ export default function Navbar({ }) {
 
   return (
     <nav className="bg-stone-100 dark:bg-stone-950 top-0 w-full z-10">
-      <div className="mx-auto py-3 px-4 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
+      <div className="mx-auto max-w-5xl py-3 px-4 flex justify-center max-sm:justify-center items-center text-stone-700 dark:text-stone-300">
         <div className="flex items-center justify-center gap-1">
-          <p className="mx-4 font-medium">Ekim's:</p>
+          <p className="mx-4 max-sm:mx-2 font-medium">Ekim's:</p>
           {NAV_ITEMS.map((item) => {
             const isActive =
               pathname === item.href ||
