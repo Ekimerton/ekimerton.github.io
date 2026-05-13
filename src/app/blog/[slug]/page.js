@@ -33,7 +33,7 @@ export default async function Post({ params }) {
   return (
     <div className="">
       <div className="flex justify-center dark:bg-stone-950 bg-stone-100">
-        <TextContainer className="mt-8 max-sm:mt-0 min-h-screen">
+        <TextContainer className="mt-12 max-sm:mt-5 min-h-full">
           <h1 className="mb-0">{frontMatter.title}</h1>
           <span className="mt-0 text-sm text-stone-500 dark:text-stone-400 mb-8">{frontMatter.date}</span>
           <div dangerouslySetInnerHTML={{ __html: content }} />
